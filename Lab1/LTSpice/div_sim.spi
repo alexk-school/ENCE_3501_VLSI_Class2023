@@ -1,0 +1,26 @@
+*** SPICE deck for cell div_sim{sch} from library lab1_dac
+*** Created on Tue Sep 26, 2023 11:35:14
+*** Last revised on Tue Sep 26, 2023 12:22:57
+*** Written on Fri Sep 29, 2023 03:41:31 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT lab1_dac__div FROM CELL div{sch}
+.SUBCKT lab1_dac__div bot in out
+Rresnwell@0 net@0 in 10k
+Rresnwell@1 out net@0 10k
+Rresnwell@2 out bot 10k
+
+* Spice Code nodes in cell cell 'div{sch}'
+vdd in 0 DC 5V
+.ic V(bot) = 0
+.op
+.ENDS lab1_dac__div
+
+*** TOP LEVEL CELL: div_sim{sch}
+Xdac_div@0 gnd net@9 out lab1_dac__div
+
+* Spice Code nodes in cell cell 'div_sim{sch}'
+vdd in 0 DC 5V
+.op
+.END
