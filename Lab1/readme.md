@@ -2,48 +2,58 @@
 By Alex Kondracki
 9/29/2023
 
+## Table of Contents
+- [Intro](#intro)
+- [Design](#design)
+   * [Schematic](#schematic)
+   * [Rules](#rules)
+   * [ELECTRIC VLSI](#electric-vlsi)
+   * [Validation](#validation)
+- [Hand Calculations](#hand-calculations)
+- [Simulations](#simulations)
+- [Conclusion](#conclusion)
+
 ## Intro
 This lab involved calculating, designing, and simulating an 5-bit R-2R Ladder DAC in Electric VLSI. For this lab an R value of 10k ohms was used. A schematic of the DAC can be found below.
 
 ## Design
 
 ### Schematic
-
-![Schematic](/images/schematic_dac.png "Schematic") 
+![Schematic](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/schematic_dac.png)"Schematic") 
 
 Fig 1. Basic schematic with **B4** as the MSB and **B0** as LSB. It does not use an op-amp. For this, R,RL are 10k ohms and CL is 10pF.
 
 The design used in VLSI will be made by piecing icons (cells) together.
 
-![Cell Schematic ](/images/schematic_cell.png "Cell Schematic ") 
+![Cell Schematic ](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/)schematic_cell.png "Cell Schematic ") 
 
 Fig 2. Cell to be used in VLSI. For **B0**, **bot** will be put in series with an R resistor.
 
 ### Rules
 
-A copy of VLSI setings used can be found in  [/electricProject/electricPrefs.xml](/electricProject/electricPrefs.xml) Keep in mind that this includes simulation settings. This lab was made using [scmos sub micron rules](https://bears.ece.ucsb.edu/class/ece224a/scmos/scmos-main.html) with a lambda of 300 nm. .
+A copy of VLSI setings used can be found in  [/electricProject/electricPrefs.xml](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/electricProject/electricPrefs.xml) Keep in mind that this includes simulation settings. This lab was made using [scmos sub micron rules](https://bears.ece.ucsb.edu/class/ece224a/scmos/scmos-main.html) with a lambda of 300 nm. .
 
 ### ELECTRIC VLSI
 
 The DAC will be made of cells using 10k ohm N-Well Resistors. They have a width of 15 and length of 175.44. Wires and VIAs have a width of 4.
 
-![Cell VLSI](/images/cell_sch.png "Cell VLSI")
+![Cell VLSI](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/cell_sch.png "Cell VLSI")
 
 Fig 3. Cell schematic in VLSI
 
-![Cell Layout](/images/cell_lay.png "Cell Layout")
+![Cell Layout](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/cell_lay.png "Cell Layout")
 
 Fig 4. Cell Layout in VLSI.
 
-![DAC VLSI](/images/dac_sch.png "DAC VLSI")
+![DAC VLSI](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/dac_sch.png "DAC VLSI")
 
 Fig 5. DAC schematic in VLSI.
 
-![DAC Layout](/images/dac_lay.png "DAC Layout")
+![DAC Layout](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/dac_lay.png "DAC Layout")
 
 Fig 6. DAC Layout in VLSI.
 
-![Sidebar](/images/sidebar.png)
+![Sidebar](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/sidebar.png)
 
 Fig 7. Electric VLSI Sidebar.
 
@@ -65,7 +75,7 @@ Summary for all cells: exports match, topologies match, sizes not checked
 NCC command completed in: 0.03 seconds.
 ```
 
-Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](/images/vlsi_log.png)
+Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/vlsi_log.png)
 
 
 ## Hand Calculations
@@ -105,15 +115,15 @@ Text 4. 10k ohm load calculation. Done by calculating the resistance from Vout.
 
 ## Simulations
 
-![DAC TR Setup](images/lab_setup.png "DAC TR Setup")
+![DAC TR Setup](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/lab_setup.png "DAC TR Setup")
 
 Fig 8. Setup for the TR simulation of the DAC.
 
-![DAC TR Simulation](images/lab_sim.png "DAC TR Simulation")
+![DAC TR Simulation](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/lab_sim.png "DAC TR Simulation")
 
 Fig 9. TR simulation of DAC. TR = 69.4 ns
 
-![DAC Voltage Simulation](images/dac_sim.png "DAC Voltage Simulation")
+![DAC Voltage Simulation](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/blob/main/Lab1/images/dac_sim.png "DAC Voltage Simulation")
 
 Fig 10. Voltage Simulation of the DAC. Setup can be seen in Fig 5. **B0**,**B1** are high. Vout = 0.46875 V
 
