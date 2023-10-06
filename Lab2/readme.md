@@ -14,63 +14,63 @@ By Alex Kondracki
   - [Conclusion](#conclusion)
 
 ## Intro
-This lab involved creating a 8 pad frame around the 5 bit dac made in ![Lab 1](github.com/alexk-school/ENCE_3501_VLSI_Class2023/tree/main/Lab1)
+This lab involved creating a 8 pad frame around the 5 bit dac made in ![Lab 1](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/tree/main/Lab1)
 
 ## Design
 
 ### Schematics
 
-![DAC Schematic](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/schematic_dac.png) 
+![DAC Schematic](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/schematic_dac.png) 
 
 Fig 1. Schematic of the 5 bit dac designed in lab 1.
 
-![Pad Schematic](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/schematic_pad.png) 
+![Pad Schematic](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/schematic_pad.png) 
 
 Fig 2. Schematic of the pad layout. Black is occupied space. Purple is a the connecter between metals 2 and 3. Gray is the passivization node
 
 ### Rules
 
-A copy of VLSI setings used can be found in  [/electricProject/electricPrefs.xml](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/electricProject/electricPrefs.xml) Keep in mind that this includes simulation settings. This lab was made using [scmos sub micron rules](bears.ece.ucsb.edu/class/ece224a/scmos/scmos-main.html) with a lambda of 300 nm.
+A copy of VLSI setings used can be found in  [/electricProject/electricPrefs.xml](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/electricProject/electricPrefs.xml) Keep in mind that this includes simulation settings. This lab was made using [scmos sub micron rules](https://bears.ece.ucsb.edu/class/ece224a/scmos/scmos-main.html) with a lambda of 300 nm.
 
 ### ELECTRIC VLSI
 
 The 5 bit dac was imported from Lab 1. The ground was altered to be a tag in the dac schematic.
 
-![DAC VLSI](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/dac_sch.png) 
+![DAC VLSI](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/dac_sch.png) 
 
 Fig 3. VLSI Schematic of DAC
 
 A pad was created it will be chained together to make the frame.
 
-![Pad VLSI](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/pad_sch.png) 
+![Pad VLSI](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/pad_sch.png) 
 
 Fig 4. VLSI Schematic of PAD. 
 
-![Pad Layout](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/pad_lay.png) 
+![Pad Layout](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/pad_lay.png) 
 
 Fig 5. VLSI Layout of PAD. Note the outside square is a drawing to provide spacing. Made from Fig 2.
 
 The padframe is made from the pads. In schematics it is represented using a bus in Electric VLSI.
 
-![Padframe VLSI](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/padframe_sch.png) 
+![Padframe VLSI](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/padframe_sch.png) 
 
 Fig 6. VLSI Schematic of padframe. Uses a bus.
 
-![Padframe Layout](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/padframe_lay.png) 
+![Padframe Layout](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/padframe_lay.png) 
 
 Fig 7. VLSI Layout of padframe.
 
 The dac and padframe and combined into a single IC. 
 
-![IC VLSI](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/ic_sch.png) 
+![IC VLSI](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/ic_sch.png) 
 
 Fig 8. Dac and Padframe linked in Electric VLSI. The pins are set up for the layout.
 
-![IC Layout](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/ic_lay.png) 
+![IC Layout](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/ic_lay.png) 
 
 Fig 9. Dac and Padframe layout. Wires/vias/connectors have a width of 4 lambda. There is a hidden export on pin 3 to prevent Electric VLSI errors.
 
-![Sidebar](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/sidebar.png)
+![Sidebar](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/sidebar.png)
 
 Fig 10. Electric VLSI Sidebar.
 
@@ -105,7 +105,7 @@ Summary for all cells: exports match, topologies match, sizes not checked
 NCC command completed in: 0.035 seconds.
 ```
 
-Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/vlsi_log.png)
+Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](https://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab2/images/vlsi_log.png)
 
 ## Conclusion
 
