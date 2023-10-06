@@ -14,7 +14,7 @@ By Alex Kondracki
   - [Conclusion](#conclusion)
 
 ## Intro
-This lab involved creating a 8 pad frame around the 5 bit dac made in ![Lab 1](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/tree/main/Lab1)
+This lab involved creating a 8 pad frame around the 5 bit dac made in [Lab 1](https://github.com/alexk-school/ENCE_3501_VLSI_Class2023/tree/main/Lab1)
 
 ## Design
 
