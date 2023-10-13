@@ -57,11 +57,11 @@ Fig 7. Schematic of the padframe with ESD protection.
 
 Fig 8. Layout of the padframe with ESD protection. The inner ring is ground and the outer is VDD.
 
-![final_ic_esd Schematic](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab3/images/fiinal_ic_esd_sch.png)
+![final_ic_esd Schematic](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab3/images/final_ic_esd_sch.png)
 
 Fig 9. Schematic of the NMOS mosfet connected to padframe_esd. Note that pin 7 is wired to both the mosfet and frame as Electric VLSI does not support having two exports with the same name. 
 
-![final_ic_esd Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab3/images/fiinal_ic_esd_lay.png)
+![final_ic_esd Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab3/images/final_ic_esd_lay.png)
 
 Fig 10. Layout of the of the NMOS mosfet connected to padframe_esd. Pin 7 is GND and pin 2 is VDD. Metal-1 to metal-2 connectors are used to connect the pads to the mosfet inside the circuit.
 
