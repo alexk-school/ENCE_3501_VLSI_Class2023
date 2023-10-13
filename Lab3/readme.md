@@ -29,7 +29,7 @@ This was started using the template found in the electricProject folder.
 
 Fig 1. nActive diode schematic. This will connect PAD to VDD.
 
-![nActive_pWell Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab3/images/nActiv_pWell_lay.png)
+![nActive_pWell Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab3/images/nActive_pWell_lay.png)
 
 Fig 2. nActive diode layout. This will connect PAD to VDD.
 
