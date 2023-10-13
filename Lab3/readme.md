@@ -13,7 +13,7 @@ By Alex Kondracki
   - [Conclusion](#conclusion)
 
 ## Intro
-This lab involved adding electrostatic discharge (ESD) protection to an 8-pad frame, and placing a NMOS mosefet in the center. This was done with clamping ESD where the pad is clamped by two diodes. The first goes from ground to pad and then from the pad to VDD, which allows spikes to either flow to ground or VDD disapating most of the energy. In this lab only 1 clamp with 2 diodes will be used making the ESD protection minimal. A template for this lab was used, which is provided by [gfm16617](http://github.com/gfm16617) and also found in the [electricProject folder](http://www.github.com/alexk-school/ENCE_3501_VLSI_Class2023/tree/main/Lab3/electricProject)
+This lab involved adding electrostatic discharge (ESD) protection to an 8-pad frame, and placing a NMOS mosefet in the center. This was done with clamping ESD where the pad is clamped by two diodes. The first goes from ground to pad and then from the pad to VDD, which allows spikes to either flow to ground or VDD disapating most of the energy. In this lab only 1 clamp with 2 diodes will be used making the ESD protection minimal. A template for this lab was used, which was provided by [gfm16617](http://github.com/gfm16617) and also found in the [electricProject folder](http://www.github.com/alexk-school/ENCE_3501_VLSI_Class2023/tree/main/Lab3/electricProject)
 
 ## Design
 
