@@ -11,6 +11,8 @@ By Alex Kondracki
     - [ELECTRIC VLSI](#electric-vlsi)
     - [Validation](#validation)
   - [Simulation](#simulation)
+    - [Inverter 1](#inverter-1)
+    - [Inverter 2](#inverter-2)
   - [Conclusion](#conclusion)
 
 ## Intro
@@ -90,9 +92,13 @@ These simulations use the NMOS and PMOS models from the file [/LTSPice/C5_models
 
 Fig 9. Colors used in LTSpice. When there a step parameter is shown it will obey this scheme.
 
+### Inverter 1
+
 ![Simulation 1 Result](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab4/images/sim_1_result.png)
 
 Fig 10. Result of Simulation 1. Inverter 1 had a switching point of 2.42V and Inverter 2 was 2.25V.
+
+### Inverter 2
 
 Simulation 2 sends a DC Pulse with goes from 0 -> 5V -> 0 over 14 ns. The pulse takes 1 ns to rise and fall, and stays at the peak for 12 ns. This pulse gets sent to each inverter with a load capacitor. The load capacitor will be simulated at 100f, 1p, 10p, and 100p. The next two figures will NOT show Vin as LTSPice doesn't color parameters when multiple traces are loaded. Refer to Fig 9 to match each value to its respective color.
 
@@ -109,4 +115,4 @@ Fig 12. Result of Inverter 2. From the bottom to top each curve represents a loa
 Fig 13. Result of both Inverters and Vin.
 
 ## Conclusion
-Both inverters where designed and simulated. The single mosfet inverter has a better switching time due to the having a smaller capacitance than inverter 2. In the simulation the higher the capacitance the worse the switching time and behavior. Even at 10p neither behave like a proper inverter. This shows how much unwanted capacitance can affect the behavior of cmos circuits.
+Both inverters where designed and simulated. The single mosfet inverter has a better switching time due to the having a smaller capacitance than inverter 2. In the simulation the higher the capacitance the worse the switching time and behavior. Even with a 10pF load neither behave like a proper inverter. This shows how much unwanted capacitance can affect the behavior of cmos circuits.
