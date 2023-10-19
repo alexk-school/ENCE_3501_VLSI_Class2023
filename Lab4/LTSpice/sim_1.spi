@@ -1,0 +1,35 @@
+*** SPICE deck for cell sim_1{sch} from library lab4
+*** Created on Sun Oct 15, 2023 20:20:46
+*** Last revised on Wed Oct 18, 2023 12:07:14
+*** Written on Wed Oct 18, 2023 12:07:25 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT lab4__inverter_1 FROM CELL inverter_1{sch}
+.SUBCKT lab4__inverter_1 in out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@1 out in gnd gnd NMOS L=1.8U W=1.8U
+Mpmos@2 out in vdd vdd PMOS L=1.8U W=3.6U
+.ENDS lab4__inverter_1
+
+*** SUBCIRCUIT lab4__inverter_2 FROM CELL inverter_2{sch}
+.SUBCKT lab4__inverter_2 in out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out in gnd gnd NMOS L=1.8U W=7.2U
+Mpmos@0 out in vdd vdd PMOS L=1.8U W=14.4U
+.ENDS lab4__inverter_2
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: sim_1{sch}
+Xinverter@2 vin vout1 lab4__inverter_1
+Xinverter@3 vin vout2 lab4__inverter_2
+
+* Spice Code nodes in cell cell 'sim_1{sch}'
+vdd vdd 0 DC 5
+vin vin 0 DC 0
+.dc vin 0 5 1m
+.include C5_models.txt
+.END
