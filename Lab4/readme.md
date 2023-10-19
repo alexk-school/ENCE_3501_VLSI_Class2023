@@ -87,9 +87,11 @@ Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](h
 These simulations use the NMOS and PMOS models from the file [/LTSPice/C5_models.txt](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab4/LTSpice/C5_models.txt)
 
 ![LTSpice Colors](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab4/images/ltspice_colors.png)
+
 Fig 9. Colors used in LTSpice. When there a step parameter is shown it will obey this scheme.
 
 ![Simulation 1 Result](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab4/images/sim_1_result.png)
+
 Fig 10. Result of Simulation 1. Inverter 1 had a switching point of 2.42V and Inverter 2 was 2.25V.
 
 Simulation 2 sends a DC Pulse with goes from 0 -> 5V -> 0 over 14 ns. The pulse takes 1 ns to rise and fall, and stays at the peak for 12 ns. This pulse gets sent to each inverter with a load capacitor. The load capacitor will be simulated at 100f, 1p, 10p, and 100p. The next two figures will NOT show Vin as LTSPice doesn't color parameters when multiple traces are loaded. Refer to Fig 9 to match each value to its respective color.
