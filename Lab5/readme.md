@@ -60,7 +60,7 @@ Fig 6. Stick Diagram of XOR2 gate without the two inverters.
 
 ![XOR2 Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/xor2_lay.png)
 
-Fig 7. Layout of the 2 input NAND gate. Note the gap between the NMOS and PMOS is wider for routing.
+Fig 7. Layout of the 2 input NAND gate. Inverters for **A** and **B** are on the left while the logic is on the right. Note the gap between the NMOS and PMOS is wider for routing.
 
 ### Full Adder
 
