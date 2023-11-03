@@ -1,0 +1,40 @@
+*** SPICE deck for cell XOR2_SIM{sch} from library lab5
+*** Created on Wed Nov 01, 2023 16:52:38
+*** Last revised on Wed Nov 01, 2023 16:53:51
+*** Written on Wed Nov 01, 2023 16:54:02 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT lab5__XOR2 FROM CELL XOR2{sch}
+.SUBCKT lab5__XOR2 A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@1 notB_in B gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@2 notA_in A gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@3 net@120 B gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@4 Y A net@120 gnd N_1u L=0.6U W=1.8U
+Mnmos@5 net@119 notA_in gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@6 Y notB_in net@119 gnd N_1u L=0.6U W=1.8U
+Mpmos@0 Y B net@128 vdd P_1u L=0.6U W=1.8U
+Mpmos@1 notB_in B vdd vdd P_1u L=0.6U W=1.8U
+Mpmos@2 notA_in A vdd vdd P_1u L=0.6U W=1.8U
+Mpmos@3 net@128 notA_in vdd vdd P_1u L=0.6U W=1.8U
+Mpmos@4 Y A net@127 vdd P_1u L=0.6U W=1.8U
+Mpmos@5 net@127 notB_in vdd vdd P_1u L=0.6U W=1.8U
+
+* Spice Code nodes in cell cell 'XOR2{sch}'
+.include ./cmosedu_models.txt
+.ENDS lab5__XOR2
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: XOR2_SIM{sch}
+XXOR2@0 vA vB vY lab5__XOR2
+
+* Spice Code nodes in cell cell 'XOR2_SIM{sch}'
+vdd vdd 0 dc 5
+vA vA 0 pulse(0v 5v 0n 1n 1n 10n 20n)
+vB vB 0 pulse(0v 5v 5n 1n 1n 10n 20n)
+.tran 0 40n
+.include ./cmosedu_models.txt
+.END

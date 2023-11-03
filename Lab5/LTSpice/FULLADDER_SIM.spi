@@ -1,0 +1,65 @@
+*** SPICE deck for cell FULLADDER_SIM{sch} from library lab5
+*** Created on Wed Nov 01, 2023 18:29:10
+*** Last revised on Wed Nov 01, 2023 18:31:46
+*** Written on Wed Nov 01, 2023 18:31:52 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT lab5__NAND2 FROM CELL NAND2{sch}
+.SUBCKT lab5__NAND2 A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@0 B gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@1 Y A net@0 gnd N_1u L=0.6U W=1.8U
+Mpmos@0 Y B vdd vdd P_1u L=0.6U W=1.8U
+Mpmos@1 Y A vdd vdd P_1u L=0.6U W=1.8U
+
+* Spice Code nodes in cell cell 'NAND2{sch}'
+.include ./cmosedu_models.txt
+.ENDS lab5__NAND2
+
+*** SUBCIRCUIT lab5__XOR2 FROM CELL XOR2{sch}
+.SUBCKT lab5__XOR2 A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@1 notB_in B gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@2 notA_in A gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@3 net@120 B gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@4 Y A net@120 gnd N_1u L=0.6U W=1.8U
+Mnmos@5 net@119 notA_in gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@6 Y notB_in net@119 gnd N_1u L=0.6U W=1.8U
+Mpmos@0 Y B net@128 vdd P_1u L=0.6U W=1.8U
+Mpmos@1 notB_in B vdd vdd P_1u L=0.6U W=1.8U
+Mpmos@2 notA_in A vdd vdd P_1u L=0.6U W=1.8U
+Mpmos@3 net@128 notA_in vdd vdd P_1u L=0.6U W=1.8U
+Mpmos@4 Y A net@127 vdd P_1u L=0.6U W=1.8U
+Mpmos@5 net@127 notB_in vdd vdd P_1u L=0.6U W=1.8U
+
+* Spice Code nodes in cell cell 'XOR2{sch}'
+.include ./cmosedu_models.txt
+.ENDS lab5__XOR2
+
+*** SUBCIRCUIT lab5__FULLADDER FROM CELL FULLADDER{sch}
+.SUBCKT lab5__FULLADDER A B Cin Cout S
+** GLOBAL gnd
+** GLOBAL vdd
+XNAND2@0 Cin net@67 net@63 lab5__NAND2
+XNAND2@1 A B net@75 lab5__NAND2
+XNAND2@2 net@63 net@75 Cout lab5__NAND2
+XXOR2@7 A B net@67 lab5__XOR2
+XXOR2@8 Cin net@67 S lab5__XOR2
+.ENDS lab5__FULLADDER
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: FULLADDER_SIM{sch}
+XFULLADDE@0 A B Cin Cout S lab5__FULLADDER
+
+* Spice Code nodes in cell cell 'FULLADDER_SIM{sch}'
+.include ./cmosedu_models.txt
+vdd vdd 0 dc 5
+va A 0 pulse(0v 5v 0n 1n 1n 10n 20n)
+vb B 0 pulse(0v 5v 5n 1n 1n 10n 20n)
+vc Cin 0 pulse(0v 5v 2.5n 1n 1n 10n 20n)
+.tran 0 60n
+.END
