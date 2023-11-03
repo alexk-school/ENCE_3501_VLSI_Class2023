@@ -155,7 +155,7 @@ For the [XOR2](#xor2) if **A** or **B** were flipped, first the inverter MOSFETS
 
 For the [NAND2](#nand2) if **A** or **B** were flipped the only one set of MOSFETS needs to flip before the output is correct. That would be a total delay of 1 .
 
-For the [Full Adder](#full-adder) if **A**, **B** or **Cin** flip there are now two different outputs. **Cin** affects **S** and **Cout** with a delay of 2. **A** needs a delay of 2 for **S** and 4 for **Cout**, however it starts to affect **Cout** at 2. **B** is the same as **A**. This means that flipping anything requires waiting for a delay of 4 before the output is correct.
+For the [Full Adder](#full-adder) if **A**, **B** or **Cin** flip there are now two different outputs. **Cin** affects **S** and **Cout** with a delay of 2. **A** and **B** need a delay of 2 for **S** and 4 for **Cout**, however they start to affect **Cout** at 2. This means that flipping anything requires waiting for a delay of 4 before the output is correct.
 
 Note that this assumes the delay of NMOS and PMOS are the same. This also assumes that Low to High and High to Low take the same time which is untrue due to holes moving slower than electrons. One solution would be to take the worst case delay for all possibilities and use it as the "delay per MOSFET".
 
