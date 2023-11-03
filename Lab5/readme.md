@@ -36,7 +36,7 @@ All mosfets have height of 2 and width of 6. PMOS will be named P_1u, and NMOS w
 
 Fig 1. Schematic of the NAND2 gate.
 
-![NAND2 Stick](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/nand2_stick.png)
+![NAND2 Stick](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/nand2_stick_scaled.png)
 
 Fig 2. Stick Diagram of the NAND2 gate.
 
@@ -46,19 +46,19 @@ Fig 3. Layout of the NAND2 gate.
 
 ### XOR2
 
-![XOR2 Schematic](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/nand2_sch.png)
+![XOR2 Schematic](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/xor2_sch.png)
 
 Fig 4. Schematic of the XOR2 gate. 2 Inverters will be used to provide **!A** and **!B**.
 
-![INV1 Stick](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/nand2_stick.png)
+![INV1 Stick](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/inv1_stick_scaled.png)
 
 Fig 5. Stick Diagram of INV1.
 
-![XOR2 Stick](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/nand2_stick.png)
+![XOR2 Stick](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/xor2_stick_scaled.png)
 
 Fig 6. Stick Diagram of XOR2 gate without the two inverters.
 
-![XOR2 Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/nand2_lay.png)
+![XOR2 Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab5/images/xor2_lay.png)
 
 Fig 7. Layout of the 2 input NAND gate. Note the gap between the NMOS and PMOS is wider for routing.
 
