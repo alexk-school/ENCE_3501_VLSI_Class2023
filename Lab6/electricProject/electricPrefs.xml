@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd"><preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="user">
+    <map/>
+    <node name="com">
+      <map/>
+      <node name="sun">
+        <map/>
+        <node name="electric">
+          <map/>
+          <node name="database">
+            <map/>
+            <node name="hierarchy">
+              <map/>
+              <node name="Clipboard!!">
+                <map/>
+              </node>
+              <node name="noname">
+                <map/>
+              </node>
+              <node name="spiceparts">
+                <map/>
+              </node>
+              <node name="tut1_rdiv">
+                <map>
+                  <entry key="CurrentCell" value="r_div{lay}"/>
+                </map>
+              </node>
+              <node name="tutorial_1">
+                <map>
+                  <entry key="CurrentCell" value="R_divider{sch}"/>
+                </map>
+              </node>
+            </node>
+            <node name="network">
+              <map/>
+            </node>
+            <node name="variable">
+              <map/>
+            </node>
+          </node>
+          <node name="plugins">
+            <map/>
+            <node name="sctiming">
+              <map/>
+            </node>
+          </node>
+          <node name="technology">
+            <map/>
+            <node name="technologies">
+              <map>
+                <entry key="ColorForGraphicsInartwork" value="16777215"/>
+                <entry key="ColorForUniversalIngeneric" value="16777215"/>
+                <entry key="ColorForGlyphIngeneric" value="16777215"/>
+                <entry key="ScaleFORmocmos" value="300.0"/>
+                <entry key="mocmosNumberOfMetalLayers" value="3"/>
+                <entry key="mocmosAnalog" value="true"/>
+              </map>
+            </node>
+          </node>
+          <node name="tool">
+            <map/>
+            <node name="compaction">
+              <map/>
+            </node>
+            <node name="drc">
+              <map/>
+            </node>
+            <node name="erc">
+              <map>
+                <entry key="MustConnectNWellToPower" value="false"/>
+              </map>
+            </node>
+            <node name="extract">
+              <map/>
+            </node>
+            <node name="generator">
+              <map/>
+              <node name="layout">
+                <map/>
+              </node>
+            </node>
+            <node name="io">
+              <map>
+                <entry key="FileTypeGroupDatabase" value="C:\Users\alex\Bin\Electric VLSI\Saves"/>
+                <entry key="FileTypeGroupSPICE Simulation" value="/C:/Users/alex/Bin/Electric VLSI/Saves/"/>
+              </map>
+            </node>
+            <node name="logicaleffort">
+              <map/>
+            </node>
+            <node name="ncc">
+              <map/>
+            </node>
+            <node name="project">
+              <map/>
+            </node>
+            <node name="routing">
+              <map/>
+            </node>
+            <node name="simulation">
+              <map>
+                <entry key="SpiceEngine" value="1"/>
+                <entry key="SpiceLevel" value="3"/>
+                <entry key="SpiceHeaderCardInfo" value="N O N E "/>
+                <entry key="SpiceTrailerCardInfo" value="N O N E "/>
+                <entry key="SpiceRunChoice" value="1"/>
+                <entry key="SpiceRunProgram" value="C:\PROGRA~1\ADI\LTspice\LTspice.exe"/>
+                <entry key="SpiceRunProgramArgs" value="-i ${FILENAME} -r ${FILENAME_NO_EXT}.raw -o ${FILENAME_NO_EXT}.out"/>
+              </map>
+            </node>
+            <node name="user">
+              <map>
+                <entry key="WindowLocation" value="2.0,0.0 2558.0x1410.0"/>
+                <entry key="ColorBackground" value="-16777216"/>
+                <entry key="ColorGrid" value="-1"/>
+                <entry key="ColorMeasurement" value="-65536"/>
+                <entry key="ColorHighlight" value="-65536"/>
+                <entry key="ColorText" value="-1"/>
+                <entry key="ColorInstanceOutline" value="-1"/>
+                <entry key="IconGenExportPlacementExact" value="false"/>
+                <entry key="DefaultWindowTab" value="1"/>
+                <entry key="ComponentMenuEntryForResistorInschematic" value="N-Well"/>
+                <entry key="ComponentMenuEntryForNPN-TransistorInmocmos" value="N-Well-Resistor"/>
+                <entry key="AlignmentToGridVector" value="(20.0 10.0 5.0 1.0 *0.5)"/>
+                <entry key="WorkingDirectory" value="C:\Users\alex\Bin\Electric VLSI\Saves"/>
+                <entry key="RecentlyOpenedLibraries" value="/C:/Users/alex/Bin/Electric%20VLSI/Saves/tutorial_1.jelib"/>
+              </map>
+              <node name="dialogs">
+                <map>
+                  <entry key="GetInfoNode-bigger" value="true"/>
+                  <entry key="GetInfoNode-buttonSelected" value="0"/>
+                  <entry key="GetInfoArc-bigger" value="true"/>
+                </map>
+              </node>
+              <node name="menus">
+                <map/>
+              </node>
+              <node name="ui">
+                <map/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>

@@ -1,0 +1,48 @@
+*** SPICE deck for cell RingOsc{sch} from library lab6
+*** Created on Fri Nov 03, 2023 11:44:48
+*** Last revised on Tue Nov 07, 2023 15:06:38
+*** Written on Tue Nov 07, 2023 15:09:59 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT lab6__INV1 FROM CELL INV1{sch}
+.SUBCKT lab6__INV1 A Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@1 Y A gnd gnd N_50n L=0.6U W=6U
+Mpmos@2 Y A vdd vdd P_50n L=0.6U W=6U
+
+* Spice Code nodes in cell cell 'INV1{sch}'
+.include cmosedu_models.txt
+.ENDS lab6__INV1
+
+*** SUBCIRCUIT lab6__NAND2 FROM CELL NAND2{sch}
+.SUBCKT lab6__NAND2 A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@0 B gnd gnd N_50n L=0.6U W=6U
+Mnmos@1 Y A net@0 gnd N_50n L=0.6U W=6U
+Mpmos@0 Y B vdd vdd P_50n L=0.6U W=6U
+Mpmos@1 Y A vdd vdd P_50n L=0.6U W=6U
+
+* Spice Code nodes in cell cell 'NAND2{sch}'
+.include cmosedu_models.txt
+.ENDS lab6__NAND2
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: RingOsc{sch}
+Cpoly2cap@0 gnd net@7 1u
+Cpoly2cap@1 gnd net@24 1u
+Cpoly2cap@2 gnd net@29 1u
+XINV1@0 net@7 net@24 lab6__INV1
+XINV1@1 net@24 net@29 lab6__INV1
+XINV1@2 net@29 OSC2 lab6__INV1
+XINV1@3 OSC2 OSC lab6__INV1
+XNAND2@0 OSC EN net@7 lab6__NAND2
+
+* Spice Code nodes in cell cell 'RingOsc{sch}'
+vdd vdd 0 DC 1
+v EN 0 DC 1
+.tran 0 1 0 0.01m
+.END
