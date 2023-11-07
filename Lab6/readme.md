@@ -158,7 +158,7 @@ Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](h
 
 ## Simulation
 
-These simulations are using short channel (50nm) models. They use the 50nm CMOS models from the file [/LTSPice/cmosedu_models.txt](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab6/LTSpice/cmosedu_models.txt)
+These simulations are using short channel (50nm) models. They use the 50nm CMOS models from the file [/LTSpice/cmosedu_models.txt](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab6/LTSpice/cmosedu_models.txt)
 
 ### Charge Pump
 
