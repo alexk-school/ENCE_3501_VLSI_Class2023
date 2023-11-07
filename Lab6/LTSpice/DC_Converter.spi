@@ -1,0 +1,102 @@
+*** SPICE deck for cell DC_Converter{sch} from library lab6
+*** Created on Mon Nov 06, 2023 18:13:43
+*** Last revised on Tue Nov 07, 2023 15:08:36
+*** Written on Tue Nov 07, 2023 15:08:47 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT lab6__ChargePump FROM CELL ChargePump{sch}
+.SUBCKT lab6__ChargePump OSC OSC2 Y
+** GLOBAL gnd
+** GLOBAL vdd
+Ccap@0 OSC net@18 100u
+Ccap@1 OSC2 net@6 100u
+Ccap@2 OSC net@9 100u
+Ccap@3 gnd Y 100u
+Mnmos@0 vdd vdd net@18 gnd N_50n L=0.6U W=6U
+Mnmos@6 net@18 net@18 net@6 gnd N_50n L=0.6U W=6U
+Mnmos@7 net@6 net@6 net@9 gnd N_50n L=0.6U W=6U
+Mnmos@8 net@9 net@9 Y gnd N_50n L=0.6U W=6U
+Rresnwell@0 Y gnd 2MEG
+
+* Spice Code nodes in cell cell 'ChargePump{sch}'
+.include cmosedu_models.txt
+**vdd vdd 0 DC 1
+**v1 OSC 0 PULSE(0 1 0 1u 1u 12.5m 25m 1Meg)
+**v2 OSC2 0 PULSE(0 1 12.5m 1u 1u 12.5m 25m 1Meg)
+**.ic V(Y) = 0
+**.tran 0 100 0 20m
+.ENDS lab6__ChargePump
+
+*** SUBCIRCUIT lab6__INV1 FROM CELL INV1{sch}
+.SUBCKT lab6__INV1 A Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@1 Y A gnd gnd N_50n L=0.6U W=6U
+Mpmos@2 Y A vdd vdd P_50n L=0.6U W=6U
+
+* Spice Code nodes in cell cell 'INV1{sch}'
+.include cmosedu_models.txt
+.ENDS lab6__INV1
+
+*** SUBCIRCUIT lab6__Regulator FROM CELL Regulator{sch}
+.SUBCKT lab6__Regulator A Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 div div notY gnd N_50n L=0.6U W=6U
+Rresnwell@0 div gnd 1MEG
+Rresnwell@1 A div 1.1MEG
+Rresnwell@2 notY gnd 1MEG
+XINV1@1 notY Y lab6__INV1
+
+* Spice Code nodes in cell cell 'Regulator{sch}'
+.include cmosedu_models.txt
+**vdd vdd 0 DC 1
+**v A 0 PULSE(0 3 0 50m 50m 0)
+**.tran 0 100m 0 1m
+.ENDS lab6__Regulator
+
+*** SUBCIRCUIT lab6__NAND2 FROM CELL NAND2{sch}
+.SUBCKT lab6__NAND2 A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@0 B gnd gnd N_50n L=0.6U W=6U
+Mnmos@1 Y A net@0 gnd N_50n L=0.6U W=6U
+Mpmos@0 Y B vdd vdd P_50n L=0.6U W=6U
+Mpmos@1 Y A vdd vdd P_50n L=0.6U W=6U
+
+* Spice Code nodes in cell cell 'NAND2{sch}'
+.include cmosedu_models.txt
+.ENDS lab6__NAND2
+
+*** SUBCIRCUIT lab6__RingOsc FROM CELL RingOsc{sch}
+.SUBCKT lab6__RingOsc EN OSC OSC2
+** GLOBAL gnd
+** GLOBAL vdd
+Cpoly2cap@0 gnd net@7 1u
+Cpoly2cap@1 gnd net@24 1u
+Cpoly2cap@2 gnd net@29 1u
+XINV1@0 net@7 net@24 lab6__INV1
+XINV1@1 net@24 net@29 lab6__INV1
+XINV1@2 net@29 OSC2 lab6__INV1
+XINV1@3 OSC2 OSC lab6__INV1
+XNAND2@0 OSC EN net@7 lab6__NAND2
+
+* Spice Code nodes in cell cell 'RingOsc{sch}'
+**vdd vdd 0 DC 1
+**v EN 0 DC 1
+**.tran 0 1 0 0.01m
+.ENDS lab6__RingOsc
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: DC_Converter{sch}
+XChargePu@0 OSC1 OSC2 OUT lab6__ChargePump
+XRegulato@0 OUT EN lab6__Regulator
+XRingOsc@0 EN OSC1 OSC2 lab6__RingOsc
+
+* Spice Code nodes in cell cell 'DC_Converter{sch}'
+vdd vdd 0 DC 1
+.tran 0 100 0 20m
+.ic V(out) = 0
+.END
