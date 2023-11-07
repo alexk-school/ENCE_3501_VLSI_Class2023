@@ -164,7 +164,7 @@ These simulations are using short channel (50nm) models. They use the 50nm CMOS 
 
 ![Charge Pump Simulation](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/Lab6/images/chargepump_sim.png)
 
-Figure 15. Simulation of 3 stage charge pump with 40Hz oscillating signals. Voltage stabilizes at ~1.79V after ~90 seconds.
+Figure 15. Simulation of 3 stage charge pump with 40Hz oscillating signals. Voltage stabilizes at ~1.9V after ~90 seconds.
 
 ### Ring Oscillator
 
