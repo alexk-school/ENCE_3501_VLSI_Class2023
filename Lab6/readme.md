@@ -25,7 +25,7 @@ By Alex Kondracki
 
 This lab involved making a DC-DC converter that converts 1v to ~1.8v using Electric VLSI. The converter uses a 3 stage charge pump driven by a ring oscillator and a regulator to disable the ring oscillator when the output is above ~1.8 V. The full converter will only be assembled in a schematic.
 
-On top of CMOS, this lab uses diodes, resistors and capacitors. Diodes in this lab will be NMOS with a shorted gate and source, this is done as it is simpler to model. Resistors will not be done to scale in the layout, this is because the labs use MegΩ which would need around 1k if not more squares. Capacitors will be only used symbolically in schematics, this is for two reasons. Electric will bridge both sides in the layout and consider them one network which in turn makes the NCC throw errors. Additionally, capacitors such as poly1-poly2 would require a size almost up to cm^2 assuming a sheet resistance in 10 fF/um^2. 
+On top of CMOS, this lab uses diodes, resistors and capacitors. Diodes in this lab will be NMOS with a shorted gate and source, this is done as it is simpler to model. Resistors will not be done to scale in the layout, this is because the labs use MegΩ which would need around 1k if not more squares. Capacitors will be only used in schematics, this is for two reasons. Electric will bridge both sides in the layout and consider them one network which in turn makes the NCC throw errors. Additionally, capacitors such as poly1-poly2 would require a size almost up to cm^2 assuming a sheet resistance in 10 fF/um^2. To build a circuit that uses capacitors that large it would be simpler to route both pins of the capacitor to outside the circuit.
 
 ## ELECTRIC VLSI
 
