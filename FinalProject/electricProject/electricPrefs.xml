@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd"><preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="user">
+    <map/>
+    <node name="com">
+      <map/>
+      <node name="sun">
+        <map/>
+        <node name="electric">
+          <map/>
+          <node name="database">
+            <map/>
+            <node name="hierarchy">
+              <map/>
+              <node name="Clipboard!!">
+                <map/>
+              </node>
+              <node name="class3">
+                <map>
+                  <entry key="CurrentCell" value="r_div{sch}"/>
+                </map>
+              </node>
+              <node name="class4_rdiv">
+                <map>
+                  <entry key="CurrentCell" value="r_div{sch}"/>
+                </map>
+              </node>
+              <node name="finalProject">
+                <map/>
+              </node>
+              <node name="fuck">
+                <map>
+                  <entry key="CurrentCell" value="padframe_esd{sch}"/>
+                </map>
+              </node>
+              <node name="hw7">
+                <map>
+                  <entry key="CurrentCell" value="BUF1{sch}"/>
+                </map>
+              </node>
+              <node name="hw7_q1">
+                <map>
+                  <entry key="CurrentCell" value="ST1{sch}"/>
+                </map>
+              </node>
+              <node name="lab1">
+                <map>
+                  <entry key="CurrentCell" value="Part_1{sch}"/>
+                </map>
+              </node>
+              <node name="lab1_dac">
+                <map>
+                  <entry key="Edac{lay}" value="true"/>
+                  <entry key="CurrentCell" value="dac{sch}"/>
+                </map>
+              </node>
+              <node name="lab1_tut">
+                <map>
+                  <entry key="CurrentCell" value="schem_1{lay}"/>
+                </map>
+              </node>
+              <node name="lab2_dacframe">
+                <map>
+                  <entry key="CurrentCell" value="dac{sch}"/>
+                  <entry key="E0_ic{lay}" value="true"/>
+                  <entry key="Epadframe{lay}" value="true"/>
+                </map>
+              </node>
+              <node name="lab4">
+                <map>
+                  <entry key="CurrentCell" value="inverter_2{lay}"/>
+                </map>
+              </node>
+              <node name="lab4_tut">
+                <map>
+                  <entry key="CurrentCell" value="inverter_2{lay}"/>
+                </map>
+              </node>
+              <node name="lab5">
+                <map>
+                  <entry key="Esim_2{lay}" value="true"/>
+                  <entry key="EFULLADDER{lay}" value="true"/>
+                  <entry key="CurrentCell" value="FULLADDER_SIM{sch}"/>
+                </map>
+              </node>
+              <node name="lab6">
+                <map>
+                  <entry key="CurrentCell" value="ChargePump{sch}"/>
+                  <entry key="ERegulator{lay}" value="true"/>
+                </map>
+              </node>
+              <node name="lab6_oldregulator">
+                <map>
+                  <entry key="CurrentCell" value="RegulatorOld{sch}"/>
+                </map>
+              </node>
+              <node name="lab_3_nmos_esd">
+                <map>
+                  <entry key="CurrentCell" value="padframe{sch}"/>
+                  <entry key="Efinal_ic_esd{lay}" value="true"/>
+                  <entry key="Epadframe_esd{lay}" value="true"/>
+                </map>
+              </node>
+              <node name="lab_3_nmos_esd_template">
+                <map>
+                  <entry key="CurrentCell" value="final_ic_esd{lay}"/>
+                  <entry key="Epad_esd{lay}" value="true"/>
+                  <entry key="Epadframe_esd{lay}" value="true"/>
+                </map>
+                <node name="final_ic_esd{lay}">
+                  <map>
+                    <entry key="CELL" value="final_ic_esd{lay}"/>
+                    <entry key="Epadframe@0" value="true"/>
+                  </map>
+                </node>
+              </node>
+              <node name="muddLib07">
+                <map>
+                  <entry key="CurrentCell" value="a2o1_4x{lay}"/>
+                </map>
+              </node>
+              <node name="nand_2">
+                <map/>
+              </node>
+              <node name="noname">
+                <map/>
+              </node>
+              <node name="rdiv">
+                <map>
+                  <entry key="CurrentCell" value="r_div{lay}"/>
+                </map>
+              </node>
+              <node name="ringcounter4">
+                <map/>
+              </node>
+              <node name="spiceparts">
+                <map/>
+              </node>
+              <node name="tut1_rdiv">
+                <map>
+                  <entry key="CurrentCell" value="r_div{sch}"/>
+                </map>
+              </node>
+              <node name="tut2">
+                <map>
+                  <entry key="CurrentCell" value="padframe{lay}"/>
+                </map>
+              </node>
+              <node name="tutMud">
+                <map>
+                  <entry key="CurrentCell" value="tutCell{lay}"/>
+                  <entry key="EtutCell{lay}" value="true"/>
+                </map>
+              </node>
+              <node name="tutorial6">
+                <map>
+                  <entry key="CurrentCell" value="NOT_2{sch}"/>
+                  <entry key="ERING_OSC{lay}" value="true"/>
+                  <entry key="ESIM_RING{lay}" value="true"/>
+                </map>
+              </node>
+              <node name="tutorial_1">
+                <map>
+                  <entry key="CurrentCell" value="R_divider{sch}"/>
+                </map>
+              </node>
+            </node>
+            <node name="network">
+              <map/>
+            </node>
+            <node name="variable">
+              <map/>
+            </node>
+          </node>
+          <node name="plugins">
+            <map/>
+            <node name="sctiming">
+              <map/>
+            </node>
+          </node>
+          <node name="technology">
+            <map/>
+            <node name="technologies">
+              <map>
+                <entry key="ScaleFORmocmos" value="300.0"/>
+                <entry key="mocmosNumberOfMetalLayers" value="3"/>
+                <entry key="ScaleFORbicmos" value="300.0"/>
+                <entry key="ColorForGraphicsInartwork" value="16777215"/>
+                <entry key="ColorForUniversalIngeneric" value="16777215"/>
+                <entry key="ColorForGlyphIngeneric" value="16777215"/>
+                <entry key="mocmosSecondPolysilicon" value="false"/>
+                <entry key="MoCMOSAlternateActivePolyRules" value="true"/>
+              </map>
+            </node>
+          </node>
+          <node name="tool">
+            <map/>
+            <node name="compaction">
+              <map/>
+            </node>
+            <node name="drc">
+              <map/>
+            </node>
+            <node name="erc">
+              <map>
+                <entry key="MustConnectNWellToPower" value="false"/>
+              </map>
+            </node>
+            <node name="extract">
+              <map/>
+            </node>
+            <node name="generator">
+              <map/>
+              <node name="layout">
+                <map/>
+              </node>
+            </node>
+            <node name="io">
+              <map>
+                <entry key="FileTypeGroupDatabase" value="/C:/Users/alex/Bin/Electric VLSI/Saves/FinalProject/"/>
+                <entry key="FileTypeGroupSPICE Simulation" value="/C:/Users/alex/Bin/Electric VLSI/Saves/TutorialMud/"/>
+              </map>
+            </node>
+            <node name="logicaleffort">
+              <map/>
+            </node>
+            <node name="ncc">
+              <map/>
+            </node>
+            <node name="project">
+              <map/>
+            </node>
+            <node name="routing">
+              <map/>
+            </node>
+            <node name="simulation">
+              <map>
+                <entry key="SpiceEngine" value="1"/>
+                <entry key="SpiceLevel" value="3"/>
+                <entry key="SpiceHeaderCardInfo" value="N O N E "/>
+                <entry key="SpiceTrailerCardInfo" value="N O N E "/>
+                <entry key="SpiceRunChoice" value="1"/>
+                <entry key="SpiceRunProgram" value="C:\PROGRA~1\ADI\LTspice\LTspice.exe"/>
+                <entry key="SpiceRunProgramArgs" value="-i ${FILENAME} -r ${FILENAME_NO_EXT}.raw -o ${FILENAME_NO_EXT}.out"/>
+              </map>
+            </node>
+            <node name="user">
+              <map>
+                <entry key="WindowLocation" value="-9.0,-9.0 1942.0x1102.0"/>
+                <entry key="IconGenExportPlacementExact" value="false"/>
+                <entry key="DefaultWindowTab" value="1"/>
+                <entry key="ComponentMenuEntryForResistorInschematic" value="Normal"/>
+                <entry key="ComponentMenuEntryForNPN-TransistorInmocmos" value="Poly1-Poly2-Capacitor"/>
+                <entry key="AlignmentToGridVector" value="(20.0 10.0 5.0 *1.0 0.5)"/>
+                <entry key="WorkingDirectory" value="C:\Users\alex\Bin\Electric VLSI\Saves\FinalProject"/>
+                <entry key="RecentlyOpenedLibraries" value="/C:/Users/alex/Bin/Electric%20VLSI/Saves/FinalProject/muddLib07.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Lab6/lab6.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/TutorialMud/muddLib07.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/TutorialMud/tutMud.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Lab6/lab6_oldregulator.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/hw7/hw7.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Lab3/lab_3_nmos_esd.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Lab4/lab4.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Lab5/lab5.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Tutorial6/tutorial6.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Lab4/lab4_tut.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/fuck.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/Lab3/lab_3_nmos_esd_template.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/class4_rdiv.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/rdiv.jelib&#10;/C:/Users/alex/Bin/Electric%20VLSI/Saves/tut2.jelib"/>
+                <entry key="ComponentMenuEntryForCapacitorInschematic" value="Normal"/>
+                <entry key="ColorBackground" value="-16777216"/>
+                <entry key="ColorGrid" value="-1"/>
+                <entry key="ColorMeasurement" value="-65536"/>
+                <entry key="ColorHighlight" value="-65536"/>
+                <entry key="ColorText" value="-1"/>
+                <entry key="ColorInstanceOutline" value="-1"/>
+                <entry key="JobVerboseMode" value="false"/>
+              </map>
+              <node name="dialogs">
+                <map>
+                  <entry key="GetInfoNode-bigger" value="true"/>
+                  <entry key="GetInfoNode-buttonSelected" value="0"/>
+                  <entry key="GetInfoArc-bigger" value="true"/>
+                  <entry key="Array_XRepeat" value="12"/>
+                  <entry key="Array_YRepeat" value="12"/>
+                </map>
+              </node>
+              <node name="menus">
+                <map>
+                  <entry key="MenuKeyBinding-Tools | Simulation (Spice) | Set Spice Model..." value="alt S"/>
+                </map>
+              </node>
+              <node name="ui">
+                <map/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>

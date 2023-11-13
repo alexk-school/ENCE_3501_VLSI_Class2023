@@ -1,0 +1,105 @@
+*** SPICE deck for cell ringcounter4_sim{sch} from library ringcounter4
+*** Created on Sun Nov 12, 2023 21:54:56
+*** Last revised on Mon Nov 13, 2023 08:35:16
+*** Written on Mon Nov 13, 2023 08:35:37 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT ringcounter4__flopr_c_1x FROM CELL flopr_c_1x{sch}
+.SUBCKT ringcounter4__flopr_c_1x d notq ph1 ph2 q resetb
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 masterb ph2buf masterinb gnd N_1u L=0.6U W=1.8U
+Mnmos@3 master masterb gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@4 slave ph1buf master gnd N_1u L=0.6U W=1.8U
+Mnmos@5 masterb ph2b n6 gnd N_1u L=0.6U W=1.2U
+Mnmos@6 n6 master gnd gnd N_1u L=0.6U W=1.2U
+Mnmos@7 n8 notq gnd gnd N_1u L=0.6U W=1.2U
+Mnmos@8 notq slave gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@10 slave ph1b n8 gnd N_1u L=0.6U W=1.2U
+Mnmos@11 q notq gnd gnd N_1u L=0.6U W=2.1U
+Mnmos@17 net@429 resetb gnd gnd N_1u L=0.6U W=7.2U
+Mnmos@19 masterinb d net@429 gnd N_1u L=0.6U W=1.8U
+Mnmos@22 ph2b ph2 gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@25 ph2buf ph2b gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@26 ph1buf ph1b gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@27 ph1b ph1 gnd gnd N_1u L=0.6U W=1.8U
+Mpmos@2 masterinb ph2b masterb vdd P_1u L=0.6U W=1.8U
+Mpmos@3 vdd masterb master vdd P_1u L=0.6U W=2.7U
+Mpmos@4 master ph1b slave vdd P_1u L=0.6U W=1.8U
+Mpmos@5 n7 ph2buf masterb vdd P_1u L=0.6U W=1.2U
+Mpmos@6 vdd master n7 vdd P_1u L=0.6U W=1.2U
+Mpmos@7 vdd notq n9 vdd P_1u L=0.6U W=1.2U
+Mpmos@8 vdd slave notq vdd P_1u L=0.6U W=2.7U
+Mpmos@10 n9 ph1buf slave vdd P_1u L=0.6U W=1.2U
+Mpmos@11 vdd notq q vdd P_1u L=0.6U W=3U
+Mpmos@16 vdd d masterinb vdd P_1u L=0.6U W=3.6U
+Mpmos@18 vdd resetb masterinb vdd P_1u L=0.6U W=1.8U
+Mpmos@21 vdd ph1 ph1b vdd P_1u L=0.6U W=2.7U
+Mpmos@22 vdd ph2 ph2b vdd P_1u L=0.6U W=2.7U
+Mpmos@24 vdd ph1b ph1buf vdd P_1u L=0.6U W=2.7U
+Mpmos@25 vdd ph2b ph2buf vdd P_1u L=0.6U W=2.7U
+
+* Spice Code nodes in cell cell 'flopr_c_1x{sch}'
+.include cmosedu_models.txt
+.ENDS ringcounter4__flopr_c_1x
+
+*** SUBCIRCUIT ringcounter4__inv_1x FROM CELL inv_1x{sch}
+.SUBCKT ringcounter4__inv_1x a y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 y a gnd gnd N_1u L=0.6U W=2.1U
+Mpmos@0 vdd a y vdd P_1u L=0.6U W=3U
+
+* Spice Code nodes in cell cell 'inv_1x{sch}'
+.include cmosedu_models.txt
+.ENDS ringcounter4__inv_1x
+
+*** SUBCIRCUIT ringcounter4__xor2_1x FROM CELL xor2_1x{sch}
+.SUBCKT ringcounter4__xor2_1x a b y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@3 a gnd gnd N_1u L=0.6U W=4.2U
+Mnmos@1 net@4 ab gnd gnd N_1u L=0.6U W=4.2U
+Mnmos@2 y b net@3 gnd N_1u L=0.6U W=4.2U
+Mnmos@3 y bb net@4 gnd N_1u L=0.6U W=4.2U
+Mnmos@4 bb b gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@5 ab a gnd gnd N_1u L=0.6U W=1.8U
+Mpmos@0 net@7 b y vdd P_1u L=0.6U W=6U
+Mpmos@1 vdd ab net@7 vdd P_1u L=0.6U W=6U
+Mpmos@2 net@8 bb y vdd P_1u L=0.6U W=6U
+Mpmos@3 vdd a net@8 vdd P_1u L=0.6U W=6U
+Mpmos@4 vdd b bb vdd P_1u L=0.6U W=2.7U
+Mpmos@5 vdd a ab vdd P_1u L=0.6U W=2.7U
+
+* Spice Code nodes in cell cell 'xor2_1x{sch}'
+.include cmosedu_models.txt
+.ENDS ringcounter4__xor2_1x
+
+*** SUBCIRCUIT ringcounter4__ringcounter4 FROM CELL ringcounter4{sch}
+.SUBCKT ringcounter4__ringcounter4 Clear Phase[0] Phase[1] Phase[2] Phase[3] Phase_Count
+** GLOBAL gnd
+** GLOBAL vdd
+Xflopr_c_@0 notq3 net@94 PC1 PC2 net@70 Clear ringcounter4__flopr_c_1x
+Xflopr_c_@1 net@70 flopr_c_@1_notq PC1 PC2 net@73 Clear ringcounter4__flopr_c_1x
+Xflopr_c_@2 net@73 flopr_c_@2_notq PC1 PC2 net@76 Clear ringcounter4__flopr_c_1x
+Xflopr_c_@3 net@76 notq3 PC1 PC2 net@56 Clear ringcounter4__flopr_c_1x
+Xinv_1x@0 Phase_Count PC1 ringcounter4__inv_1x
+Xinv_1x@1 PC1 PC2 ringcounter4__inv_1x
+Xxor2_1x@0 net@94 net@56 Phase[0] ringcounter4__xor2_1x
+Xxor2_1x@1 net@70 net@73 Phase[1] ringcounter4__xor2_1x
+Xxor2_1x@2 net@73 net@76 Phase[2] ringcounter4__xor2_1x
+Xxor2_1x@3 net@76 net@56 Phase[3] ringcounter4__xor2_1x
+.ENDS ringcounter4__ringcounter4
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: ringcounter4_sim{sch}
+Xringcoun@0 Clear Phase[0] Phase[1] Phase[2] Phase[3] PC ringcounter4__ringcounter4
+
+* Spice Code nodes in cell cell 'ringcounter4_sim{sch}'
+vdd vdd 0 dc 5
+vClear Clear 0 dc 5
+vPC PC 0 pulse(0 5 10n 1n 1n 8n 20n)
+.tran 0 160n 0 1n
+.END

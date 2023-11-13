@@ -1,0 +1,302 @@
+Circuit: *** SPICE deck for cell ringcounter4_sim{sch} from library ringcounter4
+
+Instance "m:ringcoun@0:flopr_c_@0:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@3": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@8": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@17": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@19": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@19": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@22": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@25": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@26": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@26": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@27": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:nmos@27": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@16": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@18": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@18": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@21": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@24": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@0:pmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@3": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@8": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@17": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@19": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@19": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@22": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@25": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@26": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@26": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@27": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:nmos@27": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@16": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@18": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@18": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@21": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@24": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@1:pmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@3": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@8": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@17": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@19": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@19": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@22": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@25": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@26": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@26": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@27": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:nmos@27": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@16": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@18": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@18": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@21": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@24": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@2:pmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@3": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@8": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@17": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@19": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@19": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@22": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@25": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@26": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@26": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@27": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:nmos@27": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@2": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@6": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@6": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@7": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@7": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@8": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@10": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@10": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@11": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@16": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@18": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@18": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@21": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@22": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@24": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:flopr_c_@3:pmos@25": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:inv_1x@0:nmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:inv_1x@0:pmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:inv_1x@1:nmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:inv_1x@1:pmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:pmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:pmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@0:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:pmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:pmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@1:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:pmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:pmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@2:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@4": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@5": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:nmos@5": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:pmos@0": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:pmos@1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:pmos@2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:pmos@3": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:pmos@4": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:ringcoun@0:xor2_1x@3:pmos@5": Length shorter than recommended for a level 3 MOSFET.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+Gmin = 2.03704e-09
+Gmin = 2.18725e-10
+Gmin = 2.34854e-11
+Gmin = 2.52173e-12
+Gmin = 2.70769e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Mon Nov 13 08:35:38 2023
+Total elapsed time: 0.446 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 8078
+traniter = 7567
+tranpoints = 1460
+accept = 1055
+rejected = 405
+matrix size = 96
+fillins = 168
+solver = Normal
+Avg thread counts: 6.0/5.6/5.7/1.8
+Matrix Compiler1: 25.06 KB object code size  4.5/2.4/[1.4]
+Matrix Compiler2: 15.62 KB object code size  2.1/2.0/[0.9]
+

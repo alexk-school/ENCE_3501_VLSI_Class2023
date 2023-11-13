@@ -1,0 +1,59 @@
+*** SPICE deck for cell flopr_c_1x_sim{sch} from library ringcounter4
+*** Created on Mon Nov 13, 2023 12:50:37
+*** Last revised on Mon Nov 13, 2023 12:53:30
+*** Written on Mon Nov 13, 2023 12:53:34 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT ringcounter4__flopr_c_1x FROM CELL flopr_c_1x{sch}
+.SUBCKT ringcounter4__flopr_c_1x d notq ph1 ph2 q resetb
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 masterb ph2buf masterinb gnd N_1u L=0.6U W=1.8U
+Mnmos@3 master masterb gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@4 slave ph1buf master gnd N_1u L=0.6U W=1.8U
+Mnmos@5 masterb ph2b n6 gnd N_1u L=0.6U W=1.2U
+Mnmos@6 n6 master gnd gnd N_1u L=0.6U W=1.2U
+Mnmos@7 n8 notq gnd gnd N_1u L=0.6U W=1.2U
+Mnmos@8 notq slave gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@10 slave ph1b n8 gnd N_1u L=0.6U W=1.2U
+Mnmos@11 q notq gnd gnd N_1u L=0.6U W=2.1U
+Mnmos@17 net@429 resetb gnd gnd N_1u L=0.6U W=7.2U
+Mnmos@19 masterinb d net@429 gnd N_1u L=0.6U W=1.8U
+Mnmos@22 ph2b ph2 gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@25 ph2buf ph2b gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@26 ph1buf ph1b gnd gnd N_1u L=0.6U W=1.8U
+Mnmos@27 ph1b ph1 gnd gnd N_1u L=0.6U W=1.8U
+Mpmos@2 masterinb ph2b masterb vdd P_1u L=0.6U W=1.8U
+Mpmos@3 vdd masterb master vdd P_1u L=0.6U W=2.7U
+Mpmos@4 master ph1b slave vdd P_1u L=0.6U W=1.8U
+Mpmos@5 n7 ph2buf masterb vdd P_1u L=0.6U W=1.2U
+Mpmos@6 vdd master n7 vdd P_1u L=0.6U W=1.2U
+Mpmos@7 vdd notq n9 vdd P_1u L=0.6U W=1.2U
+Mpmos@8 vdd slave notq vdd P_1u L=0.6U W=2.7U
+Mpmos@10 n9 ph1buf slave vdd P_1u L=0.6U W=1.2U
+Mpmos@11 vdd notq q vdd P_1u L=0.6U W=3U
+Mpmos@16 vdd d masterinb vdd P_1u L=0.6U W=3.6U
+Mpmos@18 vdd resetb masterinb vdd P_1u L=0.6U W=1.8U
+Mpmos@21 vdd ph1 ph1b vdd P_1u L=0.6U W=2.7U
+Mpmos@22 vdd ph2 ph2b vdd P_1u L=0.6U W=2.7U
+Mpmos@24 vdd ph1b ph1buf vdd P_1u L=0.6U W=2.7U
+Mpmos@25 vdd ph2b ph2buf vdd P_1u L=0.6U W=2.7U
+
+* Spice Code nodes in cell cell 'flopr_c_1x{sch}'
+.include cmosedu_models.txt
+.ENDS ringcounter4__flopr_c_1x
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: flopr_c_1x_sim{sch}
+Xflopr_c_@0 d nq ph1 ph2 q clear ringcounter4__flopr_c_1x
+
+* Spice Code nodes in cell cell 'flopr_c_1x_sim{sch}'
+vdd vdd 0 dc 5
+vClear clear 0 dc 5
+vd d 0 pulse(0 5 15n 1n 1n 18n 40n)
+vph1 ph1 0 pulse(0 5 10n 1n 1n 8n 20n)
+vph2 ph2 0 pulse(5 0 10n 1n 1n 8n 20n)
+.tran 0 40n 0 1n
+.END
