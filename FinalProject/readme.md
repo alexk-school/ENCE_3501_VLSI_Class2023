@@ -93,7 +93,7 @@ Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](h
 
 The simulations is using 5V long channel models. This is done using the 1 um CMOS models from the file [/LTSpice/cmosedu_models.txt](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/LTSpice/cmosedu_models.txt) These models were added in the muddlib07 files.
 
-![D Flip Flop Timing](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/flopr_c_1x_timing.png)
+![D Flip Flop Timing](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/flopr_c_1x_sim_timing.png)
 
 Figure 6. Simulation of **flopr_c_1x** timing. This is a D flip flop.
 
