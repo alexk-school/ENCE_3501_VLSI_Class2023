@@ -24,7 +24,7 @@ This lab focuses on using a library called muddLib07 to make a 4 bit ring counte
 
 A copy of VLSI settings used can be found in [/electricProject/electricPrefs.xml](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/electricProject/electricPrefs.xml) Keep in mind that this includes simulation settings. This lab was made using [sCMOS sub micron rules](http://bears.ece.ucsb.edu/class/ece224a/sCMOS/sCMOS-main.html) with a λ of 300 nm.
 
-All mosfets will be simulated as long channel.
+All mosfets will be simulated as long channel (5V, 1um).
 
 ### MuddLib07
 
@@ -32,7 +32,7 @@ This lab will be done using a library called [muddLib07.jelib](http://raw.github
 
 This lab will use **xor2_1x**, **inv_1x**, and **flopr_c_1x** from muddlib07. **flopr_c_1x** is an active low reset D flip flop. All of these files have been modified to include a text file for compiling into LTSpice, along with assigning each cmos to a model name (See [Simulation](#simulation)). **flopr_c_1x** has been modified to include a **!q** output. This was placed before the inverter that creates **q**.
 
-The flips flops in muddLib07 have two clock inputs **ph1** and **ph2**. When both are high **d** will be connected to **q**. For rising edge behavior the the clock for **ph2** should be the inverse of **ph1**. To achieve falling edge, invert the **ph1** signal and then invert **ph1** for **ph2**.
+The flips flops in muddLib07 have two clock inputs: **ph1** and **ph2**. When both are high, **d** will actively affect **q**. For rising edge behavior the clock for **ph2** should be the inverse of **ph1**. To achieve falling edge invert the clock.
 
 ### Ring Counter
 
@@ -91,23 +91,23 @@ Text 1. DRC and NCC results. Screenshot can be found in [/images/vlsi_log.png](h
 
 ## Simulation
 
-The simulations is using 5V long channel models. This is done using the 1 um CMOS models from the file [/LTSpice/cmosedu_models.txt](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/LTSpice/cmosedu_models.txt)
+The simulations is using 5V long channel models. This is done using the 1 um CMOS models from the file [/LTSpice/cmosedu_models.txt](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/LTSpice/cmosedu_models.txt) These models were added in the muddlib07 files.
 
-![D Flip Flop Timing](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/flopr_c_1x_sim.png)
+![D Flip Flop Timing](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/flopr_c_1x_timing.png)
 
-Figure 6. D flip flop timing.
+Figure 6. Simulation of **flopr_c_1x** timing. This is a D flip flop.
 
 ![Ring Counter Simulation Schematic](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/ringcounter4_sim_sch.png)
 
-Figure 7. Schematic of ring counter. 
+Figure 7. Schematic of ring counter simulation. 
 
 ![Ring Counter Simulation Phase](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/ringcounter4_sim_phase.png)
 
-Figure 8. Schematic of ring counter falling edge phase behavior.
+Figure 8. Simulation of ring counter showing phase changing with falling edge behavior.
 
 ![Ring Counter Simulation Clear](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/ringcounter4_sim_clear.png)
 
-Figure 9. Schematic of ring counter active low clear behavior. 
+Figure 9. Simulationc of ring counter showing active low clear behavior. 
 
 ## Conclusion
 
