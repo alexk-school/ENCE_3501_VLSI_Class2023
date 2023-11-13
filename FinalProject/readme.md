@@ -32,17 +32,17 @@ This lab will be done using a library called [muddLib07.jelib](http://raw.github
 
 This lab will use **xor2_1x**, **inv_1x**, and **flopr_c_1x** from muddlib07. **flopr_c_1x** is an active low reset D flip flop. All of these files have been modified to include a text file for compiling into LTSpice, along with assigning each cmos to a model name (See [Simulation](#simulation)). **flopr_c_1x** has been modified to include a **!q** output. This was placed before the inverter that creates **q**.
 
-The flips flops in muddLib07 have two clock inputs **ph1** and **ph2**. When both are high **d** will be connected to **q**. For rising edge behavior the the clock for **ph2** should be the inverse of **ph1**. To achieve falling edge invert the clock signal for **ph1** and then invert **ph1** for **ph2**.
+The flips flops in muddLib07 have two clock inputs **ph1** and **ph2**. When both are high **d** will be connected to **q**. For rising edge behavior the the clock for **ph2** should be the inverse of **ph1**. To achieve falling edge, invert the **ph1** signal and then invert **ph1** for **ph2**.
 
 ### Ring Counter
 
 ![Ring Counter Overview](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/ringcounter4_logi.png)
 
-Figure 1. Overview of ring counter in Logisim Evolution.
+Figure 1. Overview of ring counter in Logisim Evolution. Has falling edge behavior and active low clear. 
 
 ![Ring Counter Schematic](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/ringcounter4_sch.png)
 
-Figure 2. Schematic of ring counter. The inverter on **Phase_Count** provides falling edge behavior. The chosen flip flops have an active low clear which do not require an inverter.
+Figure 2. Schematic of ring counter. The inverter on **Phase_Count** provides falling edge behavior.
 
 ![Ring Counter Layout](http://raw.githubusercontent.com/alexk-school/ENCE_3501_VLSI_Class2023/main/FinalProject/images/ringcounter4_lay.png)
 
